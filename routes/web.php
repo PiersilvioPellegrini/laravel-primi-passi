@@ -32,3 +32,18 @@ Route::get("/aboutuse", function () {
 
     ]);
 })->name("user");
+
+
+Route::get("/abouthobby", function () {
+    $hobby = ['calcio','chitarra','pianoforte','pallavolo'];
+
+    
+
+
+    return view("hobby",[
+        "hobby"=> $hobby,
+        
+
+
+    ]);
+})->name("hobby");
